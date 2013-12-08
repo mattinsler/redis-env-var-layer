@@ -18,7 +18,6 @@
     return function(done) {
       return module.exports.environment(app.environment).get(true, function(err, config) {
         var k, v;
-        console.log(arguments);
         if (err != null) {
           return done(err);
         }
