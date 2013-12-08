@@ -3,7 +3,8 @@ rx = /\$\{([^\}]+)\}/
 resolve = (config, v) ->
   return null unless v?
   while (match = rx.exec(v))?
-    v = v.replace(match[0], resolve(config, config[match[1]]))
+    cfg_v = if config[match[1]]? then resolve(config, config[match[1]]) else process.env[match[1]]
+    v = v.replace(match[0], cfg_v)
   v
 
 config_from_redis = (app) ->

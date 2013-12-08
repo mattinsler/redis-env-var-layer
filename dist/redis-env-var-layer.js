@@ -4,12 +4,13 @@
   rx = /\$\{([^\}]+)\}/;
 
   resolve = function(config, v) {
-    var match;
+    var cfg_v, match;
     if (v == null) {
       return null;
     }
     while ((match = rx.exec(v)) != null) {
-      v = v.replace(match[0], resolve(config, config[match[1]]));
+      cfg_v = config[match[1]] != null ? resolve(config, config[match[1]]) : process.env[match[1]];
+      v = v.replace(match[0], cfg_v);
     }
     return v;
   };

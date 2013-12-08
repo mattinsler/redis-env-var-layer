@@ -1,7 +1,7 @@
 {
   "name": "redis-env-var-layer",
   "description": "Redis Environment Variable loader for layer-cake",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/mattinsler/redis-env-var-layer",
   "author": {
     "name": "Matt Insler",
