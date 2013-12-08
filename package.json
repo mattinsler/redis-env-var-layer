@@ -1,0 +1,37 @@
+{
+  "name": "redis-env-var-layer",
+  "description": "Redis Environment Variable loader for layer-cake",
+  "version": "0.0.1",
+  "homepage": "https://github.com/mattinsler/redis-env-var-layer",
+  "author": {
+    "name": "Matt Insler",
+    "email": "matt.insler@gmail.com",
+    "url": "http://www.mattinsler.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mattinsler/redis-env-var-layer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mattinsler/redis-env-var-layer/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/mattinsler/redis-env-var-layer/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "dist/redis-env-var-layer",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "dependencies": {
+    "redis-builder": "~0.9.1"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-contrib-clean": "~0.5.0"
+  },
+  "keywords": []
+}
